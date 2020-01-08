@@ -1,6 +1,7 @@
 package com.project.Test;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import com.project.feature.loginFeature;
 

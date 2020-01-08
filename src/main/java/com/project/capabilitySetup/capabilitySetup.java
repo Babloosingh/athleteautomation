@@ -6,8 +6,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -18,8 +18,8 @@ public class capabilitySetup {
 
 	public static AppiumDriver<MobileElement> driver = null;
 
-	@BeforeClass
-	//@BeforeMethod
+	// @BeforeClass
+	@BeforeMethod
 
 
 	public static void setupDeviceCapability() {
@@ -84,8 +84,8 @@ public class capabilitySetup {
 	}
 	
 
-	@AfterClass
-	// @AfterMethod
+	// @AfterClass
+	@AfterMethod
 	public static void tearDown() {
 		driver.quit();
 	}

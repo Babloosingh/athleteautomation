@@ -7,7 +7,6 @@ import io.qameta.allure.Step;
 
 public class loginStep extends capabilitySetup {
 	@Step(" click on Google Sign")
-
 	public static void ClickonSignWithGoogleAccount() {
 		click("xpath", loginPo.SINGIN_WITHGOOGLE_ACCOUNT);
 
