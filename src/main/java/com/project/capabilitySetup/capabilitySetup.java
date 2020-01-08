@@ -20,7 +20,7 @@ public class capabilitySetup {
 
 	// @BeforeClass
 	@BeforeMethod
-
+	// add
 
 	public static void setupDeviceCapability() {
 		
